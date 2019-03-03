@@ -1,0 +1,4 @@
+syms x a 
+y= 2*x+a-5;
+subs(y,x,2)
+%solve 
