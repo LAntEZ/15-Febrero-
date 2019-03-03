@@ -1,0 +1,17 @@
+syms x y
+w= (3*x^2)-(2*x)+y-7;
+z= (x*y)+x-5
+
+soln = solve(w == 0, x);
+wsoln= subs(soln, [a,b,x],...
+    [1,a,1]);
+wsoln= simplify(wsoln);
+vpa(wsoln, 9)
+ans
+
+soln = solve(z == 0, x);
+zsoln= subs(soln, [a,b,x],...
+    [1,a,1]);
+zsoln= simplify(zsoln);
+vpa(zsoln, 9)
+ans
