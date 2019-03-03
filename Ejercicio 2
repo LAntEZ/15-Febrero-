@@ -1,0 +1,3 @@
+syms x b
+y= x^2+(a*x)+b;
+subs(y,x,2)
